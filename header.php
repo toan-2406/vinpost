@@ -2,46 +2,30 @@
                 <div class="container">
                     <div class="header-contact">
                         <span>
-                            <h3>Hotline: </h3>
-                            <p>03458xxxx</p>
+                            <i class="fas fa-user"></i>
+                            <p>Hotline:</p>
+                            <a>03458xxxx</a>
                         </span>
                     </div>
                     <div class="header-login">
-                        <span><a href="#" class="login">Đăng nhập </a>
-                            /
-                            <a href="#" class="login"> Đăng kí</a>
-                        </span>
+                        <a href="#">Đăng nhập / Đăng kí</a>
                     </div>
                 </div>
             </div>
-            <div id="sticky-menu" class="header-main">
+            <nav>
                 <div class="container">
-                    <div class="header-logo">
-                        <img src="https://fakeimg.pl/250x130/" alt="">
+                    
+                    <div class="logo">
+                        <img src="/img/vin.png" alt="">
                     </div>
-                    <div class="header-menu">
-                        <ul class="header-menu__list">
-                            <li class="header-menu__item">
-                                <a href="index.html" class="header-menu__link active">
-                                    Trang chủ
-                                </a>
-                            </li>
-                            <li class="header-menu__item">
-                                <a href="index.html" class="header-menu__link">
-                                    Tra đơn hàng
-                                </a>
-                            </li>
-                            <li class="header-menu__item">
-                                <a href="index.html" class="header-menu__link">
-                                    Dịch vụ
-                                </a>
-                            </li>
-                            <li class="header-menu__item">
-                                <a href="index.html" class="header-menu__link">
-                                    Liên hệ chúng tôi
-                                </a>
-                            </li>
-                        </ul>
+                    <div class="nav-items">
+                        <li><a class="nav-link active2" href="#">Trang chủ</a></li>
+                        <li><a class="nav-link" href="#">Tra đơn hàng</a></li>
+                        <li><a class="nav-link" href="#">Dịch vụ</a></li>
+                        <li><a class="nav-link" href="#">Liên hệ chúng tôi</a></li>
+                    </div>
+                    <div class="menu-icon">
+                        <i class="fas fa-bars"></i>
                     </div>
                 </div>
-            </div>
+            </nav>
