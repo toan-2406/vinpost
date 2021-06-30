@@ -24,12 +24,43 @@
 
         <!-- End Mobile toggle -->
         <!-- BACK TO TOP BTN -->
-        <a href="#" onclick="topFunction()" id="back-to-top">
+        <span onclick="topFunction()" id="back-to-top">
             <i class="fas fa-arrow-up"></i>
-        </a>
+        </span>
         <header>
-            <?php include 'header.php';?>
-            
+            <!-- <?php include 'header.php';?> -->
+            <div class="header-top">
+                <div class="container">
+                    <div class="header-contact">
+                        <span>
+                            <i class="fas fa-user"></i>
+                            <p>Hotline:</p>
+                            <a>03458xxxx</a>
+                        </span>
+                    </div>
+                    <div class="header-login">
+                        <a href="#">Đăng nhập / Đăng kí</a>
+                    </div>
+                </div>
+            </div>
+            <nav>
+                <div class="container">
+                    
+                    <div class="logo">
+                        <a href=""><img src="/img/vin.png" alt=""></a>
+                        
+                    </div>
+                    <div class="nav-items">
+                        <li><a class="nav-link active2"  href="#">Trang chủ</a></li>
+                        <li><a class="nav-link" href="#">Tra đơn hàng</a></li>
+                        <li><a class="nav-link" href="#">Dịch vụ</a></li>
+                        <li><a class="nav-link" href="#">Liên hệ chúng tôi</a></li>
+                    </div>
+                    <div class="menu-icon">
+                        <i class="fas fa-bars"></i>
+                    </div>
+                </div>
+            </nav>
 
         </header>
         <section id="slider">
@@ -81,22 +112,22 @@
                     <h1>Dịch vụ nổi bật</h1>
                 </div>
                 <div class="sevice-list">
-                    <div class="sevice-item">
-                        <i class="far fa-paper-plane"></i>
+                    <div class="sevice-item left-to-right play-on-scroll">
+                        <i class="fas fa-paper-plane"></i>
                         <p>Nhanh - An toàn - chính xác</p>
                         <h3>Chuyển phát Nhanh</h3>
                         <h2><a href="#">VCN</a></h2>
                     </div>
                     <div class="sevice-item">
-                        <i class="far fa-paper-plane"></i>
+                        <i class="fas fa-hand-holding-usd"></i>
                         <!-- <i class="fas fa-hand-holding-usd"></i> -->
                         <p>An tâm - tiết kiệm - kịp thời</p>
                         <h3>Chuyển phát Tiết Kiệm</h3>
                         <h2><a href="#">VTK</a></h2>
                     </div>
-                    <div class="sevice-item">
-                        <i class="far fa-paper-plane"></i>
-                        <!-- <i class="fas fa-rocket"></i> -->
+                    <div class="sevice-item right-to-left play-on-scroll">
+                        
+                        <i class="fas fa-rocket"></i>
                         <p>Giao ngay trong 24h</p>
                         <h3>Chuyển phát Hỏa Tốc</h3>
                         <h2><a href="#">VHT</a></h2>
@@ -106,7 +137,7 @@
         </section>
         <section id="post-offices" class="post-offices">
             <div class="container">
-                <div class="post-left">
+                <div class="post-left p">
                     <h1>
                         Mạng lưới bưu cục trên <br>63 tỉnh thành
                     </h1>
@@ -128,14 +159,14 @@
                         <div class="post-update__user">
                             <i class="fas fa-user-tie"></i>
                             <div class="post-update__text">
-                                <h2>328.252</h2>
+                                <h2 id="display-counter" class="play-on-scroll">328.252</h2>
                                 <p>Khách hàng tin dùng</p>
                             </div>
                         </div>
                         <div class="post-update__user">
                             <i class="fas fa-cubes"></i>
                             <div class="post-update__text">
-                                <h2>328.252</h2>
+                                <h2 id="display-couter">328.252</h2>
                                 <p>Đơn hàng đang vận chuyển</p>
                             </div>
                         </div>
@@ -152,23 +183,23 @@
                     <h1>Quy trình chuyển hàng</h1>
                 </div>
                 <div class="shipping-steps">
-                    <div class="shipping-step__item">
-                        <i class="far fa-file-alt"></i>
+                    <div class="shipping-step__item zoom play-on-scroll">
+                        <i class="far fa-file-alt "></i>
                         <p>1. Nhận báo giá</p>
                     </div>
-                    <div class="shipping-step__item">
+                    <div class="shipping-step__item zoom delay-2 play-on-scroll">
                         <i class="fas fa-box-open"></i>
                         <p>2. Đóng gói hàng hóa</p>
                     </div>
-                    <div class="shipping-step__item">
+                    <div class="shipping-step__item zoom delay-4 play-on-scroll">
                         <i class="fas fa-shipping-fast"></i>
                         <p>3. Vận chuyển hàng</p>
                     </div>
-                    <div class="shipping-step__item">
+                    <div class="shipping-step__item zoom delay-6 play-on-scroll">
                         <i class="fas fa-file-signature"></i>
                         <p>4. Ký nhận hàng</p>
                     </div>
-                    <div class="shipping-step__item">
+                    <div class="shipping-step__item zoom delay-8 play-on-scroll">
                         <i class="fas fa-people-carry"></i>
                         <p>5. Giao hàng tận tay</p>
                     </div>
@@ -176,9 +207,9 @@
                 <div class="shipping-info">
                     <div class="shipping-address">
                         <div class="shipping-btn">
-                            <button class="active2">Hồ chí minh</button>
-                            <button>Hà nội</button>
-                            <button>Đà nẵng</button>
+                            <button class="active2 ">Hồ chí minh</button>
+                            <button >Hà nội</button>
+                            <button >Đà nẵng</button>
                         </div>
                         <div class="shipping-text">
                             <p>Địa chỉ:28 Vũ Ngọc Phan, P.13, Q.Bình Thạnh, TP.HCM</p>
@@ -196,8 +227,8 @@
                             <input type="text" placeholder="Vui lòng nhập họ tên(*)">
                             <input type="number" placeholder="Vui lòng nhập số điện thoại(*)">
                             <input type="text" placeholder="Vui lòng nhập email(*)">
-                            <input type="text" placeholder="Hãy cho chúng tôi biết yêu cầu của bạn(*)">
-
+                            
+                            <textarea rows="4" cols="30" placeholder="Hãy cho chúng tôi biết yêu cầu của bạn"></textarea>
                             <button>Gửi</button>
                         </div>
 
@@ -224,8 +255,100 @@
             </div>
         </section>
         <footer>
-            <?php include 'footer.php'; ?>
-            
+            <!-- <?php include 'footer.php'; ?> -->
+            <div class="footer-big">
+                <div class="container">
+                    <div class="footer-company">
+                        <div class="footer-logo">
+                            VINPOST
+                        </div>
+                        <p><b>Vinpost</b> là doanh nghiệp hàng đầu cung cấp dịch vụ chuyển phát nhanh, hàng hóa, bưu
+                            kiện trong nước, quốc tế tại Việt Nam.</p>
+                        <hr>
+                        <h3>Thông tin liên hệ</h3>
+                        <ul>
+                            <li>
+                                <i class="fas fa-file-alt"></i>
+                                <p>Giấy chứng nhận Đăng ký Kinh doanh số: 0104093672 do Phòng ĐKKD Thành phố Hà Nội Cấp
+                                    ngày:
+                                    12/07/2019</p>
+                            </li>
+                            <li>
+                                <i class="fas fa-map-marker-alt"></i>
+                                <p>VP giao dịch:
+                                    Toà nhà N2, Km số 2, Đại lộ Thăng Long, Phường Mễ Trì, Quận Nam Từ Liêm, Hà Nội.</p>
+                            </li>
+                            <li>
+                                <i class="fas fa-envelope"></i>
+                                <p>cskh@vinpost.com.vn</p>
+                            </li>
+                            <li>
+                                <i class="fas fa-phone"></i>
+                                <p>09xxxxxx</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-intruduction">
+                        <h3>Giới thiệu</h3>
+                        <ul>
+                            <li><a href="#">
+                                    <p>Giới thiệu Vin Post</p>
+                                </a></li>
+                            <li><a href="#">
+                                    <p>Tin tức</p>
+                                </a></li>
+                            <li><a href="#">
+                                    <p>Mạng lưới bưu cục</p>
+                                </a></li>
+                            <li><a href="#">
+                                    <p>Câu hỏi thường gặp</p>
+                                </a></li>
+                            <li><a href="#">
+                                    <p>Tuyển dụng</p>
+                                </a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-support">
+                        <h3>Hỗ trợ khách hàng</h3>
+                        <ul>
+                            <li><a href="#">
+                                    <p>Điều khoản sử dụng</p>
+                                </a></li>
+                            <li><a href="#">
+                                    <p>Chính sách bảo mật thông tin</p>
+                                </a></li>
+                            <li><a href="#">
+                                    <p>Chính sách vận chuyển</p>
+                                </a></li>
+                            <li><a href="#">
+                                    <p>Hướng dẫn sử dụng dịch vụ</p>
+                                </a></li>
+                            <li><a href="#">
+                                    <p>Câu hỏi thường gặp</p>
+                                </a></li>
+                            <li><a href="#">
+                                    <p>Góp ý sản phẩm dịch vụ</p>
+                                </a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-contact">
+                        <h3>Hỗ trợ</h3>
+                        <p>Liên hệ Hotline: <b>7:00 - 20:00</b></p>
+                        <h2><a href="">19001203</a></h2>
+                        <h3>Kết nối</h3>
+                        <div class="footer-social">
+                            <i class="fab fa-facebook-square"></i>
+                            <i class="fab fa-youtube"></i>
+                            <i class="fab fa-linkedin-in"></i>
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <img src="./img/Rfefde4cb941850f336ec90964cab625f.png" alt="">
+                        <p>Đã thông báo bộ công thương</p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">copyright 2021 by Vinpost</div>
         </footer>
     </div>
     <script src="js/app.js"></script>
