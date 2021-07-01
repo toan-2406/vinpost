@@ -87,11 +87,11 @@ nav {
 .nav-link.active2 {
   color: var(--color);
 }
-nav .logo {
+.logo {
   height: 90px;
   width: 100px;
 }
-nav .logo img {
+.logo img {
   position: absolute;
   left: 0;
   height: 90px;

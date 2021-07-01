@@ -95,3 +95,26 @@ const logoshow = document.querySelector(".logo img");
             logoshow.classList.add("show");
             
         });
+
+// Show/Hide Password
+
+function show_hide_psw(){
+  var x = document.getElementById("id_password");
+  
+  if (x.type === "password") {
+    x.type = "text";
+  } else {
+    x.type = "password";
+  }
+
+}
+
+function show_hide_repsw(){
+  var y = document.getElementById("id_repassword");
+  if (y.type === "password") {
+    y.type = "text";
+  } else {
+    y.type = "password";
+  }
+}
+
