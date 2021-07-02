@@ -93,7 +93,6 @@ const logoshow = document.querySelector(".logo img");
          menuBtn.addEventListener('click',function(){
             items.classList.toggle("active");
             logoshow.classList.add("show");
-            
         });
 
 // Show/Hide Password

@@ -946,7 +946,7 @@ background-image: linear-gradient(180deg, rgba(244,242,241,0.8994510950667135) 0
   font-weight: 500;
 }
 .banner-text strong{
-  color: #000;
+  color: #373737;
   background-color: #fff;
   padding: 2px 0px 2px 4px;
 }
@@ -1017,10 +1017,29 @@ background-image: linear-gradient(180deg, rgba(244,242,241,0.8994510950667135) 0
   
 }
 .data-chart {
+  color: #373737;
   width: 50%;
+  padding: 15px 10px 15px 10px;
 }
-.data-chart .text{
-  background-color: var(--bg-footer);
+.data-h4{
+  font-size: 1.3rem;
+  font-weight: 300;
+  text-transform: capitalize;
+}
+.data-h3{
+  margin: 8px 0px 14px 0px;
+  font-weight: 500;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+.data-circle{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+.data-circle p{
+  text-align: center;
 }
 .data-sevice{
   width: 100%;
