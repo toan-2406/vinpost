@@ -59,26 +59,7 @@ Array.from(menuItems).forEach((item, index) => {
     }
 })
 
-//Sevices active
-let seviceItems =document.getElementsByClassName('sevices-content__link');
-Array.from(seviceItems).forEach((item,index) => {
-  item.onclick =(e)=>{
-    let currSevices = document.querySelector('.sevices-content__link.active-type-sevice');
-    currSevices.classList.remove('active-type-sevice');
-    item.classList.add('active-type-sevice');
-    let table1 = document.getElementById('fxg-table-wrapper1');
-    let table2 =document.getElementById('fxg-table-wrapper2');
-    if(currSevices == table1){
-      table1.style.display="block";
-      table2.style.display="none";
-    }
-    if(currSevices == table2){
-      table2.style.display="block";
-      table1.style.display="none";
-    }
-    
-  }
-})
+
 //Slider show
 var slideIndex = 1;
 showSlides(slideIndex);
