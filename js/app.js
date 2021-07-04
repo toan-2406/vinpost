@@ -23,9 +23,33 @@ let menuItems = document.getElementsByClassName('nav-link');
 
 Array.from(menuItems).forEach((item, index) => {
     item.onclick = (e) => {
-        let currMenu = document.querySelector('.nav-link.active2');
-        currMenu.classList.remove('active2')
+        let currMenu = document.querySelector('.nav-link.active1');
+        currMenu.classList.remove('active1')
+        item.classList.add('active1')
+    }
+})
+
+//Address info
+let addressItems = document.getElementsByClassName('btn-address');
+
+Array.from(addressItems).forEach((item, index) => {
+    item.onclick = (e) => {
+        let addressText= document.querySelector('.shipping-text');
+        let addressText1= document.querySelector('.shipping-text1');
+        let currAddress = document.querySelector('.btn-address.active2');
+        currAddress.classList.remove('active2')
         item.classList.add('active2')
+        if(currAddress){
+          
+          addressText.style.display='block';
+          addressText1.style.display='block';
+        }
+        else{
+          
+          addressText1.style.display='none';
+        }
+        
+       
     }
 })
 //nav-menu

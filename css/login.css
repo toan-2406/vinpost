@@ -82,6 +82,9 @@ button {
       margin-top: 2px;
       padding-left: 10px;
   }
+  .login-form button a{
+    color: #fff;
+  }
   .login-form input {
       width: 100%;
       outline: none;

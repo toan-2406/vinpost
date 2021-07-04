@@ -1,32 +1,37 @@
-<div class="footer-big">
+<footer>
+            
+            <div class="footer-big">
                 <div class="container">
                     <div class="footer-company">
                         <div class="footer-logo">
-                            VINPOST
+                            <div class="logo-footer">
+                                <a href="index.html"><img src="/img/vin.png" alt=""></a>
+                            </div>
+                            <p><b>Vinpost</b> là doanh nghiệp hàng đầu cung cấp dịch vụ chuyển phát nhanh, hàng hóa, bưu
+                                kiện trong nước, quốc tế tại Việt Nam.</p>
                         </div>
-                        <p><b>Vinpost</b> là doanh nghiệp hàng đầu cung cấp dịch vụ chuyển phát nhanh, hàng hóa, bưu
-                            kiện trong nước, quốc tế tại Việt Nam.</p>
+                        
                         <hr>
                         <h3>Thông tin liên hệ</h3>
                         <ul>
                             <li>
-                                <i class="fas fa-phone"></i>
-                                <p>Giấy chứng nhận Đăng ký Kinh doanh số: 0104093672 do Phòng ĐKKD Thành phố Hà Nội Cấp
-                                    ngày:
-                                    12/07/2019</p>
+                                <i class="fas fa-file-alt"></i>
+                                <p>Giấy chứng nhận Đăng ký Kinh doanh số: <strong><a style="color: #ee9c03;"
+                                            href="#">0316860844</a></strong> do Phòng ĐKKD Thành phố Hà Nội Cấp
+                                </p>
                             </li>
                             <li>
-                                <i class="fas fa-phone"></i>
+                                <i class="fas fa-map-marker-alt"></i>
                                 <p>VP giao dịch:
-                                    Toà nhà N2, Km số 2, Đại lộ Thăng Long, Phường Mễ Trì, Quận Nam Từ Liêm, Hà Nội.</p>
+                                    Số 40 đường 297, phường Phước Long B, thành phố Thủ Đức, HCM</p>
                             </li>
                             <li>
-                                <i class="fas fa-phone"></i>
+                                <i class="fas fa-envelope"></i>
                                 <p>cskh@vinpost.com.vn</p>
                             </li>
                             <li>
                                 <i class="fas fa-phone"></i>
-                                <p>09xxxxxx</p>
+                                <p><a style="color: #ee9c03;" href="tel:02822298123">02822298123</a> </p>
                             </li>
                         </ul>
                     </div>
@@ -76,7 +81,7 @@
                     <div class="footer-contact">
                         <h3>Hỗ trợ</h3>
                         <p>Liên hệ Hotline: <b>7:00 - 20:00</b></p>
-                        <h2><a href="">19001203</a></h2>
+                        <h2><a href="tel:02822298123">02822298123</a></h2>
                         <h3>Kết nối</h3>
                         <div class="footer-social">
                             <i class="fab fa-facebook-square"></i>
@@ -91,3 +96,4 @@
                 </div>
             </div>
             <div class="copyright">copyright 2021 by Vinpost</div>
+        </footer>

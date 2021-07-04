@@ -85,8 +85,8 @@ nav {
   justify-content: space-between;
   height: 90px;
 }
-.nav-link.active2 {
-  color: var(--color);
+.nav-link.active1{
+  color: var(--color) !important;
 }
 .logo {
   height: 90px;
@@ -230,13 +230,7 @@ nav .logo.space {
   text-transform: uppercase;
   color: black;
 }
-.header-menu__link:hover,
-.header-menu__link.active {
-  color: var(--icon-color);
-}
-.active1 {
-  background-color: var(--btn-color);
-}
+
 /* Slider */
 .mySlides {
   display: none;
@@ -286,17 +280,20 @@ nav .logo.space {
 /* Fading animation */
 .fade {
   -webkit-animation-name: fade;
-  -webkit-animation-duration: 1s;
+  -webkit-animation-duration: 1.2s;
   animation-name: fade;
-  animation-duration: 1s;
+  animation-duration: 1.2s;
   animation-timing-function: ease-in-out;
 }
 
 @-webkit-keyframes fade {
-  from {
-    opacity: 0.5;
+  0% {
+    opacity: 0.6;
   }
-  to {
+  50%{
+    opacity: 0.8;
+  }
+  100% {
     opacity: 1;
   }
 }
@@ -630,7 +627,17 @@ nav .logo.space {
   margin-right: 5px;
   border-radius: 5px;
 }
+.btn-address.active2{
+  background-color: var(--color);
+}
 .shipping-text {
+  font-size: 1rem;
+  font-weight: 500;
+  margin: 20px 0px;
+  line-height: 30px;
+  
+}
+.shipping-text1{
   font-size: 1rem;
   font-weight: 500;
   margin: 20px 0px;
@@ -685,6 +692,7 @@ nav .logo.space {
   border-radius: 5px;
   border: var(--bg-footer) 2px solid;
   outline: none;
+  width: 100%;
 }
 .shipping-form__input textarea:focus {
   border: var(--color) 3px solid;
@@ -783,7 +791,7 @@ footer {
   margin-right: 30px;
 }
 .footer-company hr {
-  margin: 20px 0px;
+  margin:5px 0px 20px 0px;
 }
 .footer-big li {
   display: flex;
@@ -802,6 +810,14 @@ footer {
 }
 .footer-logo {
   font-size: 3rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items:center;
+}
+.logo-footer img{
+  height: 90px;
+  width: 100px;
+
 }
 .footer-contact {
   line-height: 30px;
@@ -1005,6 +1021,9 @@ footer {
 }
 .hide-sevice {
   display: none;
+}
+#fxg-table-wrapper2 h2{
+  margin-top: 20px;
 }
 .data-sevices {
   height: 400px;
@@ -1277,6 +1296,44 @@ footer {
       background-position: center;
     }
     /* end Process Bar */
+  /* Contact */
+  .contact-wrapper{
+    background-color: var(--primary-color);
+  }
+  .contact-wrapper .container:nth-child(1){
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 20px 20px;
+    column-gap: 20px;
+  }
+  .contact-wrapper .container:last-child{
+    padding: 20px 20px;
+  }
+  .contact-left{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .contact-address__name{
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: var(--color);
+    margin-bottom: 10px;
+  }
+  .contact-address__detail{
+    
+  }
+  .contact-address__detail span{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  align-items: center;
+  }
+  .contact-address__detail span i{
+    padding: 10px;
+  }
 /* RESPONSIVE */
 @media (max-width: 992px) {
   /* Process Bar */
@@ -1404,10 +1461,9 @@ footer {
   .slider-main img {
     height: 400px;
   }
-  .shipping-btn {
-    justify-content: space-between;
-  }
+
   /* DATA_SEVICE */
+  
   .data-sevices {
     height: auto;
     width: 100%;
@@ -1463,6 +1519,24 @@ footer {
   
 }
 @media (max-width: 512px) {
+  .track-result__way span{
+    line-height: unset;
+  }
+  .track-result__way span p{
+    
+    margin-bottom: 20px;
+  }
+  .track-result__way{
+    display: inline-block;
+    width: 100%;
+  }
+  .phone-contact{
+    height: 50px !important;
+    width: 50px !important;
+  }
+  .phone-contact i{
+    font-size: 1.5rem !important;
+  }
   .tracking-banner-text h1{
     font-size: 2.5rem;
   }
@@ -1631,6 +1705,7 @@ footer {
 
 .left-to-right.start {
   transform: translateX(0);
+  transition: 1s ease-in-out;
 }
 
 .right-to-left {
@@ -1640,6 +1715,7 @@ footer {
 
 .right-to-left.start {
   transform: translateX(0);
+  transition: 1s ease-in-out;
 }
 
 .zoom {
@@ -1695,8 +1771,8 @@ footer {
   background-color: var(--btn-color);
   outline: none;
   border-radius: 50px;
-  width: 66px;
-  height: 66px;
+  width: 55px;
+  height: 55px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -1705,7 +1781,7 @@ footer {
 .phone-contact i {
   background-color: var(--primary-color);
   color: #fff;
-  font-size: 2.5rem;
+  font-size: 1.8rem;
   border-radius: 50%;
   padding: 10px;
   margin-left: 3px;

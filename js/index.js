@@ -20,9 +20,7 @@ loop = () => {
     elToShow.forEach((item, index) => {
         if (isElInViewPort(item)) {
             item.classList.add('start')
-        } else {
-            item.classList.remove('start')
-        }
+        } 
     })
     scroll(loop)
 }
@@ -52,9 +50,11 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";  
 
 }
-// setInterval(function() {
-//     plusSlides();
-// }, 3000);
+ setInterval(() => {
+     
+  plusSlides(1)
+     
+ }, 5000*2);
 // Show/Hide Password
 
 function show_hide_psw(){
