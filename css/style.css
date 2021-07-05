@@ -1412,6 +1412,12 @@ footer {
 }
 
 @media (max-width: 769px) {
+  .contact-wrapper .container:nth-child(1){
+    grid-template-columns: 1fr;
+  }
+  .contact-right .shipping-form__input{
+    width: 100%;
+  }
   .shipping-form__input {
     width: 100%;
   }
