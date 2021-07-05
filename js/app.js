@@ -45,7 +45,7 @@ Array.from(addressItems).forEach((item, index) => {
           addressText1.style.display='block';
         }
         else{
-          
+        
           addressText1.style.display='none';
         }
         
