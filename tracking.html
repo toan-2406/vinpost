@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vinpost Express</title>
+    <!-- using font GG -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!--Using CSS--------------------------->
+    <link href="css/carousel.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/slighter.css">
+    <link rel="stylesheet" href="css/mk_charts.css">
+    <!--fav icon--------------------------->
+    <link rel="shortcut icon" href="/img/vin.ico">
+    <!--Using FontAwesome------------>
+    <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+    
+</head>
+
+<body>
+    <div id="wrapper" class="wrapper">
+
+        <!-- End Mobile toggle -->
+        <!-- BACK TO TOP BTN -->
+        <!-- Header -->
+<div class="phone-contact">
+            <a href="tel:0345883555"><i class="fas fa-phone-alt faa-ring animated fa-5x"></i></a>
+        </div>
+        <span onclick="topFunction()" id="back-to-top">
+            <i class="fas fa-arrow-up"></i>
+        </span>
+        <header>
+            
+            <div class="header-top">
+                <div class="container">
+                    <div class="header-contact">
+                        <span>
+                            <i class="fas fa-user"></i>
+                            <p>Hotline:</p>
+                            <a href="tel:0345883555" style="color: #fff;">0345883555</a>
+                        </span>
+                    </div>
+                    <div class="header-login">
+                        <a href="login.html">Đăng nhập / Đăng kí</a>
+                    </div>
+                </div>
+
+                <nav>
+                    <div class="container">
+                        <div class="logo">
+                            <a href="index.html"><img src="/img/vin.png" alt=""></a>
+                        </div>
+                        <div class="nav-items">
+                            <li><a class="nav-link" href="index.html">Trang chủ</a></li>
+                            <li><a class="nav-link" href="tracking.html">Tra đơn hàng</a></li>
+                            <li><a class="nav-link" href="sevice.html">Dịch vụ</a></li>
+                            <li><a class="nav-link" href="contact.html">Liên hệ chúng tôi</a></li>
+                        </div>
+                        <div class="menu-icon">
+                            <i class="fas fa-bars"></i>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <!-- <?php include 'header.php';?> -->
+        <section id="slug">
+            <div class="container">
+                <div class="slug-link">
+                    <a href="index.html" class="slug-lv1">Trang chủ </a><i class="fas fa-caret-right"></i><a
+                        class="slug-lv2" href=""> Tra cứu đơn hàng</a></i>
+                </div>
+            </div>
+        </section>
+        <section id="banner-sevice">
+            <div class="banner-img">
+                <img src="/img/background2.png" alt="">
+                <div class="container">
+                    <div class="tracking-banner-text">
+                        <h1>Tra cứu đơn hàng</h1>
+                        <p> Công cụ theo dõi của chúng tôi cung cấp cho <br> bạn quyền kiểm soát lô hàng bằng cách liên tục <br> thông báo để bạn có thể an tâm vận chuyển.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="track-wrapper">
+            <div class="container">
+                <div class="track-title">
+                    <h1>
+                        Nhập vào mã đơn hàng của Vinpost mà bạn cần tra cứu.
+                    </h1>
+                    <div class="track-btnId">
+                        <div class="input-block">
+                            <input type="text" name="input-text" id="input-text" required spellcheck="false">
+                            <span class="placeholder">
+                              Mã Đơn Hàng
+                            </span>
+                          </div>
+                        <a href="#"><i class="fas fa-search"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="track-result">
+            <div class="container">
+                <div class="track-result__title"><h2>Thông tin đơn hàng</h2></div>
+                <b>#DH56465456</b>
+                <h3>Thời gian dự kiến:</h3>
+                <p>Thứ ba, 24/7/2021 khoảng 16:30</p>
+                <div class="track-processBar">
+                    <ul>
+                        <li>
+                            <img src="../img/mouse-icon.png" alt=""><br>
+                            <i class="fas fa-check"></i>
+                            <p>Xác nhận đơn hàng</p>
+                        </li>
+                        <li>
+                            <img src="../img/order1-icon.png" alt=""><br>
+                            <i class="fas fa-sync-alt"></i>
+                            <p>Đóng gói đơn hàng</p>
+                        </li>
+                        <li>
+                            <img src="../img/delivery-icon.png" alt=""><br>
+                            <i class="fas fa-times"></i>
+                            <p>Vận chuyển đơn hàng</p>
+                        </li>
+                        <li>
+                            <img src="../img/delivery-success-icon.png" alt=""><br>
+                            <i class="fas fa-times"></i>
+                            <p>Đã giao thành công</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="track-result__way">
+                    <span><b style="White-space: nowrap;">Nhận từ</b><p>đường số 6, Linh Xuân, Thủ đức, HCM</p></span>
+                    <span><b style="White-space: nowrap;">Giao đến</b><p>Thăng long,sdasdsadsaadss Hà nội</p></span>
+                </div>
+            </div>
+            </div>
+        </section>
+        
+           
+        <footer>
+            
+            <div class="footer-big">
+                <div class="container">
+                    <div class="footer-company">
+                        <div class="footer-logo">
+                            <div class="logo-footer">
+                                <a href="index.html"><img src="/img/vin.png" alt=""></a>
+                            </div>
+                            <p><b>Vinpost</b> là doanh nghiệp hàng đầu cung cấp dịch vụ chuyển phát nhanh, hàng hóa, bưu
+                                kiện trong nước, quốc tế tại Việt Nam.</p>
+                        </div>
+                        
+                        <hr>
+                        <h3>Thông tin liên hệ</h3>
+                        <ul>
+                            <li>
+                                <i class="fas fa-file-alt"></i>
+                                <p>Giấy chứng nhận Đăng ký Kinh doanh số: <strong><a style="color: #ee9c03;"
+                                            href="#">0316860844</a></strong> do Phòng ĐKKD Thành phố Hà Nội Cấp
+                                </p>
+                            </li>
+                            <li>
+                                <i class="fas fa-map-marker-alt"></i>
+                                <p>VP giao dịch:
+                                    Số 40 đường 297, phường Phước Long B, thành phố Thủ Đức, HCM</p>
+                            </li>
+                            <li>
+                                <i class="fas fa-envelope"></i>
+                                <p>cskh@vinpost.com.vn</p>
+                            </li>
+                            <li>
+                                <i class="fas fa-phone"></i>
+                                <p><a style="color: #ee9c03;" href="tel:02822298123">02822298123</a> </p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-intruduction">
+                        <h3>Giới thiệu</h3>
+                        <ul>
+                            <li><a href="#">
+                                    <p>Giới thiệu Vin Post</p>
+                                </a></li>
+                            <li><a href="#">
+                                    <p>Tin tức</p>
+                                </a></li>
+                            <li><a href="#">
+                                    <p>Mạng lưới bưu cục</p>
+                                </a></li>
+                            <li><a href="#">
+                                    <p>Câu hỏi thường gặp</p>
+                                </a></li>
+                            <li><a href="#">
+                                    <p>Tuyển dụng</p>
+                                </a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-support">
+                        <h3>Hỗ trợ khách hàng</h3>
+                        <ul>
+                            <li><a href="#">
+                                    <p>Điều khoản sử dụng</p>
+                                </a></li>
+                            <li><a href="#">
+                                    <p>Chính sách bảo mật thông tin</p>
+                                </a></li>
+                            <li><a href="#">
+                                    <p>Chính sách vận chuyển</p>
+                                </a></li>
+                            <li><a href="#">
+                                    <p>Hướng dẫn sử dụng dịch vụ</p>
+                                </a></li>
+                            <li><a href="#">
+                                    <p>Câu hỏi thường gặp</p>
+                                </a></li>
+                            <li><a href="#">
+                                    <p>Góp ý sản phẩm dịch vụ</p>
+                                </a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-contact">
+                        <h3>Hỗ trợ</h3>
+                        <p>Liên hệ Hotline: <b>7:00 - 20:00</b></p>
+                        <h2><a href="tel:02822298123">02822298123</a></h2>
+                        <h3>Kết nối</h3>
+                        <div class="footer-social">
+                            <i class="fab fa-facebook-square"></i>
+                            <i class="fab fa-youtube"></i>
+                            <i class="fab fa-linkedin-in"></i>
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <img src="./img/Rfefde4cb941850f336ec90964cab625f.png" alt="">
+                        <p>Đã thông báo bộ công thương</p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">copyright 2021 by Vinpost</div>
+        </footer><!-- <?php include 'footer.php'; ?> -->
+            
+    </div>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
