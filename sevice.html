@@ -1,5 +1,5 @@
-      <!-- <?php include 'header.php';?> -->
-      <!DOCTYPE html>
+<!-- <?php include 'header.php';?> -->
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -20,7 +20,7 @@
     <link rel="shortcut icon" href="/img/vin.ico">
     <!--Using FontAwesome------------>
     <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
-    
+
 </head>
 
 <body>
@@ -29,14 +29,14 @@
         <!-- End Mobile toggle -->
         <!-- BACK TO TOP BTN -->
         <!-- Header -->
-<div class="phone-contact">
+        <div class="phone-contact">
             <a href="tel:0345883555"><i class="fas fa-phone-alt faa-ring animated fa-5x"></i></a>
         </div>
         <span onclick="topFunction()" id="back-to-top">
             <i class="fas fa-arrow-up"></i>
         </span>
         <header>
-            
+
             <div class="header-top">
                 <div class="container">
                     <div class="header-contact">
@@ -51,7 +51,7 @@
                     </div>
                 </div>
 
-                <nav>
+                <nav class="navbar-menu">
                     <div class="container">
                         <div class="logo">
                             <a href="index.html"><img src="/img/vin.png" alt=""></a>
@@ -59,7 +59,7 @@
                         <div class="nav-items">
                             <li><a class="nav-link" href="index.html">Trang chủ</a></li>
                             <li><a class="nav-link" href="tracking.html">Tra đơn hàng</a></li>
-                            <li><a class="nav-link" href="sevice.html">Dịch vụ</a></li>
+                            <li><a class="nav-link active" href="sevice.html">Dịch vụ</a></li>
                             <li><a class="nav-link" href="contact.html">Liên hệ chúng tôi</a></li>
                         </div>
                         <div class="menu-icon">
@@ -71,7 +71,7 @@
         </header>
         <!-- End Mobile toggle -->
         <!-- BACK TO TOP BTN -->
-        
+
         <section id="slug">
             <div class="container">
                 <div class="slug-link">
@@ -100,21 +100,20 @@
         <section id="types-of-services">
             <div class="container">
                 <div class="sevices-content">
-                    <ul class="sevices-content__list">
-                        <li class="sevices-content__item">
-                            <a href="#fxg-table-wrapper1" class="sevices-content__link active-type-sevice">Vận chuyển
-                                kiện hàng</a>
-                        </li>
-                        <li class="sevices-content__item">
-                            <a href="#fxg-table-wrapper2" class="sevices-content__link">Vận chuyển thư từ</a>
-                        </li>
-                    </ul>
+                    <div class="sevices-content__list">
+                        <span class="sevices-content__item active">
+                            Vận chuyển kiện hàng
+                        </span>
+                        <span class="sevices-content__item">
+                            Vận chuyển thư từ
+                        </span>
+                    </div>
                     <div class="sevices-content__text">
                         <p>Cho dù quý khách gửi tài liệu quan trọng, gói hàng hay hàng hóa đi quốc tế, chúng tôi luôn
                             sẵn sàng phục vụ nhu cầu vận chuyển của quý khách. Chọn từ nhiều dịch vụ vận chuyển và tìm
                             phương án tốt nhất cho các lô hàng quốc tế của quý khách.</p>
                     </div>
-                    <div id="fxg-table-wrapper1">
+                    <div class="sevices-content__table active">
                         <h2>Vận chuyển hàng hóa</h2>
                         <table class="fxg-table" border="1" cellspacing="0" cellpadding="0" width="100%"
                             style="text-align: center;">
@@ -182,7 +181,7 @@
                             </tbody>
                         </table>
                     </div>
-                    <div id="fxg-table-wrapper2">
+                    <div class="sevices-content__table">
                         <h2>Vận chuyển thư</h2>
                         <table class="fxg-table" width="100%" cellspacing="0" cellpadding="0" border="1">
                             <tbody>
@@ -287,7 +286,7 @@
         </section>
         <!-- <?php include 'footer.php';?> -->
         <footer>
-            
+
             <div class="footer-big">
                 <div class="container">
                     <div class="footer-company">
@@ -298,7 +297,7 @@
                             <p><b>Vinpost</b> là doanh nghiệp hàng đầu cung cấp dịch vụ chuyển phát nhanh, hàng hóa, bưu
                                 kiện trong nước, quốc tế tại Việt Nam.</p>
                         </div>
-                        
+
                         <hr>
                         <h3>Thông tin liên hệ</h3>
                         <ul>
@@ -393,6 +392,21 @@
         document.addEventListener('DOMContentLoaded', () => {
             let slider = new Slighter(document.querySelector('.slider-autoplay'), 3500);
         });
+    </script>
+    <script>
+        const seviceBtns = document.querySelectorAll('.sevices-content__item')
+        const seviceContents = document.querySelectorAll('.sevices-content__table')
+
+        seviceBtns.forEach((item, index) => {
+            const seviceContent = seviceContents[index]
+            item.onclick = function () {
+                document.querySelector('.sevices-content__item.active').classList.remove('active')
+                document.querySelector('.sevices-content__table.active').classList.remove('active')
+
+                this.classList.add('active')
+                seviceContent.classList.add('active')
+            }
+        })
     </script>
 </body>
 
