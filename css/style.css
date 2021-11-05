@@ -35,6 +35,11 @@ li {
   margin: 0 auto;
   height: auto;
 }
+.banner-title {
+  font-weight: 700;
+  font-size: 2rem;
+  padding: 10px 0;
+}
 #wrapper {
   overflow: visible;
 }
@@ -148,58 +153,6 @@ nav .menu-icon {
 }
 nav .menu-icon i {
   display: none;
-}
-@media (max-width: 992px) {
-  nav {
-    padding: 0 50px;
-  }
-}
-@media (max-width: 992px) {
-  .post-update__text h2 {
-    font-size: 3.5rem;
-    letter-spacing: 0.1em;
-  }
-  nav {
-    padding: 0px;
-    z-index: 999;
-  }
-
-  nav .logo img.show {
-    z-index: 999;
-  }
-  nav .nav-items {
-    position: fixed;
-    z-index: 998;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    top: 0px;
-    width: 100%;
-    left: -100%;
-    height: 100%;
-    padding: 10px 50px 0 50px;
-    text-align: center;
-    background: #fff;
-    transition: left 0.3s ease;
-  }
-  nav .nav-items.active {
-    left: 0px;
-  }
-  nav .nav-items li:nth-child(1) {
-    margin: 110px 0px 30px 0px;
-  }
-  nav .nav-items li {
-    margin: 30px 0px;
-    font-size: 20px;
-  }
-
-  nav .menu-icon {
-    display: block;
-  }
-  nav .menu-icon i {
-    display: block;
-    font-size: 1.8rem;
-  }
 }
 
 .space {
@@ -386,9 +339,12 @@ nav .logo.space {
 .search input {
   background-color: transparent;
   border: none;
-  font-size: 0.8rem;
+  font-size: 1rem;
   width: 250px;
   outline: none;
+  color: #fff;
+  font-weight: 500;
+  padding: 0 15px;
 }
 .search i {
   background-color: #fff;
@@ -951,10 +907,7 @@ footer {
   top: 70px;
   padding-left: 100px;
 }
-.banner-text h1 {
-  font-size: 3rem;
-  font-weight: 300;
-}
+
 .banner-text strong {
   color: #373737;
   background-color: #fff;
@@ -965,7 +918,7 @@ footer {
   margin: 20px 0px;
   font-weight: 300;
   font-size: 1.2rem;
-  color: rgba(238, 237, 237, 0.904);
+  color: #fff;
 }
 .banner-text .banner-btn {
   background-color: var(--primary-color);
@@ -1102,11 +1055,7 @@ footer {
   text-align: left;
   width: 100%;
 }
-.tracking-banner-text h1 {
-  font-weight: 300;
-  font-size: 3rem;
-  margin-bottom: 20px;
-}
+
 .tracking-banner-text p {
   line-height: 22px;
 }
@@ -1150,9 +1099,7 @@ footer {
   border-radius: 50%;
 }
 .track-btnId a i:hover {
-  transform: scale(1.5);
-  transition: 0.4s ease-in-out;
-  background-color: var(--primary-color);
+  background-color: rgb(252, 92, 0);
   color: #fff;
 }
 
@@ -1176,7 +1123,7 @@ div.input-block span.placeholder {
   position: absolute;
   margin: 17px 0;
   padding: 0 4px;
-  color: #000;
+  color: #fff;
   display: flex;
   align-items: center;
   font-size: 1.2rem;
@@ -1320,41 +1267,99 @@ div.input-block input:focus + span.placeholder {
 .contact-wrapper {
   background-color: var(--primary-color);
 }
-.contact-wrapper .container:nth-child(1) {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  padding: 20px 20px;
-  column-gap: 20px;
+.contact-container {
+  display: flex;
+  align-items: flex-start;
+  padding: 20px 0px;
 }
-.contact-wrapper .container:last-child {
-  padding: 20px 20px;
+.map {
+  height: auto;
+  width: 100%;
+}
+.map iframe {
+  margin: 20px 0;
 }
 .contact-left {
   display: flex;
   align-items: flex-start;
   justify-content: center;
   flex-direction: column;
+  width: 50%;
 }
-.contact-address__name {
-  font-size: 1.2rem;
-  text-transform: uppercase;
-  font-weight: 500;
-  color: var(--color);
-  margin-bottom: 10px;
+.contact-right {
+  width: 50%;
 }
-.contact-address__detail {
-}
-.contact-address__detail span {
+.contact-item {
   display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
   align-items: center;
+  justify-content: flex-start;
+  padding: 10px 20px;
+  width: 100%;
 }
-.contact-address__detail span i {
-  padding: 10px;
+.contact-text {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.contact-text p:first-child {
+  margin-right: 5px;
+}
+.contact-title {
+  padding: 10px 0px;
+}
+.contact-icon {
+  margin-right: 10px;
+}
+.contact-company {
+  padding-top: 10px;
 }
 /* RESPONSIVE */
 @media (max-width: 992px) {
+  nav {
+    padding: 0 50px;
+    padding: 0px;
+    z-index: 999;
+  }
+  .post-update__text h2 {
+    font-size: 3.5rem;
+    letter-spacing: 0.1em;
+  }
+  nav .logo img.show {
+    z-index: 999;
+  }
+  nav .nav-items {
+    position: fixed;
+    z-index: 998;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 0px;
+    width: 100%;
+    left: -100%;
+    height: 100%;
+    padding: 10px 50px 0 50px;
+    text-align: center;
+    background: #fff;
+    transition: left 0.3s ease;
+  }
+  nav .nav-items.active {
+    left: 0px;
+  }
+  nav .nav-items li:nth-child(1) {
+    margin: 110px 0px 30px 0px;
+  }
+  nav .nav-items li {
+    margin: 30px 0px;
+    font-size: 20px;
+  }
+
+  nav .menu-icon {
+    display: block;
+  }
+  nav .menu-icon i {
+    display: block;
+    font-size: 1.8rem;
+  }
   /* Process Bar */
 
   .track-processBar ul li {
@@ -1410,7 +1415,7 @@ div.input-block input:focus + span.placeholder {
   }
   .post-left,
   .post-right {
-    width: 70%;
+    width: 90%;
     margin-top: 20px;
   }
 
@@ -1468,9 +1473,12 @@ div.input-block input:focus + span.placeholder {
   }
   .shipping-address,
   .shipping-form {
-    width: 70%;
+    width: 90%;
   }
-
+  .fxg-table th,
+  .fxg-table td {
+    padding: 10px;
+  }
   .footer-company,
   .footer-intruduction,
   .footer-support,
@@ -1527,13 +1535,18 @@ div.input-block input:focus + span.placeholder {
   .banner-img img {
     height: 300px;
   }
-  .banner-text h1 {
-    font-size: 2.5rem;
-    font-weight: 300;
-  }
   .banner-text p {
     margin: 10px 0px;
     font-size: 1rem;
+  }
+  /* CONTACT */
+  .contact-container {
+    flex-direction: column;
+  }
+  .contact-left,
+  .contact-right {
+    width: 90%;
+    margin: 0 auto;
   }
 }
 @media (max-width: 512px) {
@@ -1628,14 +1641,6 @@ div.input-block input:focus + span.placeholder {
   .tracking-search .search {
     margin-top: 10px;
   }
-  .post-left,
-  .post-right {
-    width: 100%;
-  }
-  .shipping-address,
-  .shipping-form {
-    width: 100%;
-  }
   .wrapper .container {
     padding: 0px 10px;
   }
@@ -1683,6 +1688,9 @@ div.input-block input:focus + span.placeholder {
     width: 100%;
     margin: 10px 0px;
     padding: 20px 0px;
+  }
+  .sevices-content__item {
+    width: 157px;
   }
   .shipping-step__item i {
     padding: 7px 10px;
